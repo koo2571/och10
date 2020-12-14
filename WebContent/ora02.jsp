@@ -19,7 +19,9 @@
 	Class.forName(driver);
 	Connection conn = DriverManager.getConnection(url,"scott","tiger");
 	Statement stmt = conn.createStatement();
-	ResultSet rs = stmt.executeQuery(sql);
+	ResultSet rs = stmt.executeQuery(sql); //select 일때
+	// int askf = stmt.executeUpdate(sql); //insert,upadte,delete 일때
+	// 존재하냐 
 	if(rs.next()){
 		String dname = rs.getString("dname"); //rs.getString(2);
 		String loc   = rs.getString(3);

@@ -21,6 +21,7 @@
 	Connection conn = DriverManager.getConnection(url,"scott","tiger");
 	Statement stmt = conn.createStatement();
 	ResultSet rs = stmt.executeQuery(sql);
+	//선언 이유 선물세트 -> 묶어서 전송 가능(DTO) , 실무에서 거의 쓰이는 방식
 	Dept dept = new Dept();
 	if(rs.next()){
 		dept.setDeptno(rs.getInt(1));

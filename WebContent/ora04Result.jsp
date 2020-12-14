@@ -17,7 +17,7 @@
 부서명 : <%=dept.getDname() %><p>
 근무지 : <%=dept.getLoc() %><p>
 <h1>EL 표기법 부서정보</h1>
-부서코드 : ${dept.getDeptno() }<p>
+부서코드 : ${dept.getDeptno() }<p> <!-- dept.deptno도 가능 -->
 부서명 : ${dept.getDname() }<p>
 근무지 : ${dept.getLoc() }<p>
 </body>
